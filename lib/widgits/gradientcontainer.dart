@@ -1,7 +1,8 @@
+import 'package:first_app/widgits/dice_roller.dart';
 import 'package:flutter/material.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer(this.colors, {super.key});
+  GradientContainer(this.colors, {super.key});
 
   final List<Color> colors;
 
@@ -15,8 +16,8 @@ class GradientContainer extends StatelessWidget {
               colors: colors,
               begin: Alignment.topLeft,
               end: Alignment.bottomRight)),
-      child: Center(
-        child: Image.asset('assets/images/dice-1.png'),
+      child: const Center(
+        child: MyWidget(),
       ),
     );
   }
